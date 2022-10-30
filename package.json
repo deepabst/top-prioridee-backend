@@ -1,0 +1,26 @@
+{
+  "name": "top-prioridee-backend",
+  "version": "1.0.0",
+  "description": "Welcome to the Backend Repo for Top PrioriDee!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deepabst/top-prioridee-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deepabst/top-prioridee-backend/issues"
+  },
+  "homepage": "https://github.com/deepabst/top-prioridee-backend#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^4.11.0",
+    "mongoose": "^6.7.0",
+    "nodemon": "^2.0.20"
+  }
+}
