@@ -6,6 +6,7 @@ Link to FrontEnd - TODO
 ## Tech used
 
 ## How to run locally
+$ `node server.js`
 
 ## Data Structures
 
