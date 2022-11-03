@@ -1,6 +1,6 @@
 // This is like a Rails app/models/tasks.rb model file
-// EXCEPT it's also like athe db/schema.rb or like a migration
-// to create the correct columns
+// EXCEPT it's also like the db/schema.rb or like a migration
+// to create the correct columns in a mongodb database
 
 const mongoose = require('mongoose');
 
@@ -8,12 +8,6 @@ const TaskSchema = new mongoose.Schema({
     // Define the 'columns' for this 'table'
     // OR
     // Define the 'properties' for this 'document'
-
-    // id: 1,
-    // summary: 'learn React Hooks',
-    // importance: 0,
-    // urgency: 2,
-    // active: false
 
     user: {
         // TODO: how might I refer to a user - Research Mongoose Reference
@@ -24,7 +18,7 @@ const TaskSchema = new mongoose.Schema({
     urgency: Number,
     created: Date,
     active: Boolean
-}): // end of Schema definition
+}); // end of Schema definition
 
 const model = mongoose.model('Task', TaskSchema );
 
