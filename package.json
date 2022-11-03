@@ -4,7 +4,8 @@
   "description": "Welcome to the Backend Repo for Top PrioriDee!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:seed": "node models/seeds.js"
   },
   "repository": {
     "type": "git",
