@@ -32,6 +32,7 @@ db.once('open', async () => {
     const createdTasks = await Task.create([
         {
             summary: 'learn React Hooks',
+            // foobar: 'test junk here', // the schema ignores this
             importance: 0,
             urgency: 2,
             created: new Date('2022-10-14T04:20:00Z'),

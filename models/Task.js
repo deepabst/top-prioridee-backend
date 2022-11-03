@@ -13,11 +13,26 @@ const TaskSchema = new mongoose.Schema({
         // TODO: how might I refer to a user - Research Mongoose Reference
         user_id: Number
     },
-    summary: String, // String is the JS constructor for a string
-    importance: Number,
-    urgency: Number,
-    created: Date,
-    active: Boolean
+    summary: {
+        type: String,
+        required: true
+    }, // 'String' is the JS constructor for a string
+    importance: {
+        type: Number,
+        default: 0
+    },
+    urgency: {
+        type:Number,
+        default: 0
+    },
+    created: {
+        type: Date, 
+        default: Date.now
+    },
+    active: {
+        type:Boolean,
+        default: true
+    }
 }); // end of Schema definition
 
 const model = mongoose.model('Task', TaskSchema );
