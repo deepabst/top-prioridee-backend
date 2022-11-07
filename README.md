@@ -6,7 +6,8 @@ Link to FrontEnd - TODO
 ## Tech used
 
 ## How to run locally
-$ `node server.js`
+$ `npm start`
+$ ` mongod --dbpath=/Users/your-user-name/mongodb/`
 
 ## Data Structures
 
