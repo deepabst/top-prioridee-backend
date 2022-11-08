@@ -25,15 +25,13 @@ const TaskSchema = new mongoose.Schema({
         type:Number,
         default: 0
     },
-    created: {
-        type: Date, 
-        default: Date.now
-    },
     active: {
         type:Boolean,
         default: true
     }
 }); // end of Schema definition
+
+TaskSchema.set('timestamps', true)
 
 const model = mongoose.model('Task', TaskSchema );
 
