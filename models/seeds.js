@@ -36,7 +36,7 @@ db.once('open', async () => {
             importance: 0,
             urgency: 2,
             created: new Date('2022-10-14T04:20:00Z'),
-            active: false,
+            active: true,
         },
         {
             summary: 'walk the dog',
@@ -57,7 +57,7 @@ db.once('open', async () => {
             importance: 1,
             urgency: 3,
             created: new Date('2022-10-07T04:20:00Z'),
-            active: false,
+            active: true,
           }
     ])
 

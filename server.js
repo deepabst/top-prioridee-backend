@@ -38,3 +38,21 @@ app.get('/tasks', async (req,res) => {
     const tasks = await Task.find();
     res.json(tasks);
 }) // GET /tasks
+
+app.post('/tasks', async (req,res) => {
+    console.log('Post /tasks');
+    console.log('params:', req.params);
+    console.log('query:', req.query);
+    res.sendStatus(422)
+})
+
+/**
+ * Task.create([
+        {
+            summary: 'learn React Hooks',
+            importance: 0,
+            urgency: 2,
+            created: new Date('2022-10-14T04:20:00Z'),
+            active: true,
+        },
+ */
