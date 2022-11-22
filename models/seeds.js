@@ -25,10 +25,10 @@ db.on('error', err => {
 db.once('open', async () => {
     console.log('Success! DB connected, model loaded.');
 
-    // 1. ActiveRecord: Flight.destroy_all
+    // 1. ActiveRecord: Task.destroy_all
     await Task.deleteMany();
 
-    // 2. ActiveRecord: Flight.create!([])
+    // 2. ActiveRecord: Task.create!([])
     const createdTasks = await Task.create([
         {
             summary: 'learn React Hooks',
@@ -63,7 +63,7 @@ db.once('open', async () => {
 
     console.log('created seed tasks:', createdTasks);
 
-    // // like ActiveRecord: Flight.all
+    // // like ActiveRecord: Task.all
     // const tasks = await Task.find(); // await means we wait for the promise to resolve
     // console.log('tasks', tasks);
     
